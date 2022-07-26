@@ -112,10 +112,34 @@ body {
   font-size: 1.25em;
   height: 100%;
 }
+header {
+    font-size: 2.5em;
+    margin: 50px 0px;
+}
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+header, main, footer {
+    display: flex;
+    width: 100%;
+    line-height: 50px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+main {
+    border-bottom: 2px gold ridge;
+    font-size: 2em;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+footer {
+    border-top: 2px gold ridge;
+    font-size: 1.5em;
+    padding: 20px 0;
+    margin-top: 50px;
 }
 
 .div-1,
@@ -125,15 +149,15 @@ body {
   justify-content: center;
   align-items:center;
   color: #fff;
-  line-height: 1.5em;
   font-size: 1.6em;
   background-color: #f16059;
   width: 25%;
-  height: 300px;
-  padding: 0 60px;
+  height: 100px;
+  padding: 20px 0;
 }
 
 .div-2 {
+    padding: 20px 25px;
     border-left: 2px gold ridge;
     border-right: 2px gold ridge;
 }
